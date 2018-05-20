@@ -24,7 +24,6 @@ class CashRegister
     @title = title
     @price = price
     @total = @total + (@price * @quantity)
-    self.items
   end
 
   def apply_discount
