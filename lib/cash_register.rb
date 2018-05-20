@@ -5,7 +5,7 @@
 # void last transaction
 # to call an instance method inside of another instance method, use self keyword
 
-
+require 'pry'
 
 class CashRegister
   attr_accessor :total, :discount, :title, :quantity, :price
@@ -36,6 +36,8 @@ class CashRegister
   def apply_discount
       @total = @total - (@total * (@discount/100))
   end
+
+binding.pry
 
   def items
 
