@@ -6,15 +6,15 @@
 # to call an instance method inside of another instance method, use self keyword
 
 class CashRegister
-  attr_accessor :total, :employee_discount
+  attr_accessor :total, :discount
 
   def initialize(employee_discount = 20)
-    @employee_discount = employee_discount
+    @discount = discount
     @total = 0
   end
 
   def discount
-    @total = @total - (@total * @employee_discount)
+    @total = @total - (@total * @discount)
   end
 
   def total
