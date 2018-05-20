@@ -36,7 +36,7 @@ class CashRegister
   end
 
   def items
-    self.quantity.times {|title| self.items << self.title}
+    
   end
 
   def void_last_transaction
