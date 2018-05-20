@@ -36,7 +36,6 @@ class CashRegister
   end
 
   def items
-    self.add_item
     self.quantity.times {|title| self.items << self.title}
   end
 
