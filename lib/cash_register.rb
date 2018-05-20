@@ -8,11 +8,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :discount, :title, :quantity, :price
-
-  def item_list
-    @item_list = []
-  end
+  attr_accessor :total, :discount, :title, :quantity, :price, :items
 
   def initialize(discount = nil)
     @discount = discount.to_f
@@ -41,7 +37,7 @@ class CashRegister
   end
 
   def items
-    @item_list
+    
   end
 
   def void_last_transaction
