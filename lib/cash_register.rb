@@ -8,7 +8,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :discount, :title, :quantity, :price, :items
+  attr_accessor :total, :discount, :title, :quantity, :price, :item
 
   @item = []
 
