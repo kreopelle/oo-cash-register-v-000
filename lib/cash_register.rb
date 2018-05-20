@@ -37,7 +37,7 @@ class CashRegister
   end
 
   def items
-    @quantity.times do |title| @
+    @quantity.times {|title| @items << @title}
   end
 
   def void_last_transaction
