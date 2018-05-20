@@ -12,11 +12,7 @@ class CashRegister
     @discount = discount
     @total = 0
   end
-
-  def discount
-    @total = @total - (@total * @discount)
-  end
-
+  
   def total
 
   end
