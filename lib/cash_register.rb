@@ -5,6 +5,8 @@
 # void last transaction
 # to call an instance method inside of another instance method, use self keyword
 
+
+
 class CashRegister
   attr_accessor :total, :discount, :title, :quantity, :price
 
