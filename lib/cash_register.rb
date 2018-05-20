@@ -12,7 +12,7 @@ class CashRegister
 
   @@all = []
 
-  def initialize(discount = 20)
+  def initialize(discount = nil)
     @discount = discount.to_f
     @total = 0
     save
