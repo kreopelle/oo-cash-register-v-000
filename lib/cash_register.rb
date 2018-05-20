@@ -8,7 +8,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :discount, :title, :quantity, :price
+  attr_accessor :total, :discount, :title, :quantity, :price, :items 
 
   @@all = []
 
@@ -43,7 +43,7 @@ class CashRegister
   end
 
   def items
-
+    
   end
 
   def void_last_transaction
