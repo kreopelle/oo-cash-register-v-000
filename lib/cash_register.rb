@@ -6,7 +6,7 @@
 # to call an instance method inside of another instance method, use self keyword
 
 class CashRegister
-  attr_accessor :total, :discount, :item, :quantity, :price
+  attr_accessor :total, :discount, :title, :quantity, :price
 
   @@all = []
 
@@ -24,7 +24,7 @@ class CashRegister
       @total
   end
 
-  def add_item
+  def add_item(title, price)
 
   end
 
