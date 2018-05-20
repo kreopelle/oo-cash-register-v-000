@@ -22,7 +22,7 @@ class CashRegister
 
   def total
     @@all.each do |item|
-      @total = @total + item.price 
+      @total = @total + item.price
     end 
   end
 
