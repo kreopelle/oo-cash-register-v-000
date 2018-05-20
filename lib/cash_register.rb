@@ -33,10 +33,10 @@ class CashRegister
 
   def apply_discount
     if @discount != nil
-      @total = @total - (@total * @discount)
+      @total = @total - (@total * (@discount/100))
     else
       @total
-    end 
+    end
   end
 
   def items
