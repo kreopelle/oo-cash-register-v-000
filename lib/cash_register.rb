@@ -13,7 +13,7 @@ class CashRegister
   @@all = []
 
   def initialize(discount = 20)
-    @discount = discount
+    @discount = discount.to_f
     @total = 0
     save
   end
