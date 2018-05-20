@@ -13,6 +13,11 @@ class CashRegister
   def initialize(discount = 20)
     @discount = discount
     @total = 0
+    save
+  end
+
+  def save
+    @@all << self
   end
 
   def total
